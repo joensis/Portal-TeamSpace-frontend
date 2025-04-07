@@ -1,6 +1,6 @@
-.home-container{
+.principal-container{
     display: grid;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 70px 1fr 60px;
     grid-template-columns: 15% 1fr 15%;
     grid-template-areas: 
     "header header header"
@@ -8,17 +8,24 @@
     "footer footer footer" ;
     height: 100vh;
     overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    
     
 }
 
-.home-header{
+.principal-header{
     grid-area: header;
-    background-color: #73819b;
+    background-color: #9cb3dd;
     display: flex;
     justify-content: space-between;
+    border-color: #ffffff30;
+    border-width:  1px;
+    border-style: solid;
+
 }
 
-.home-main{
+.principal-main{
 
     grid-area: main;
     background-color: #f4f5f7;
@@ -26,38 +33,45 @@
    
 }
 
-.home-asideLeft{
+.principal-asideLeft{
      grid-area: asideLeft;
-    background-color:#73819b ;
-    border-top-color: #ffffff30;
-    border-top-width: 1px;
-    border-top-style: solid;
+    background-color:#9cb3dd ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.home-footer{
+.principal-footer{
     grid-area: footer;
-    background-color: #73819b;
+    background-color: #9cb3dd;
     display: flex;
     justify-content: space-between;
+    border-color: #ffffff30;
+    border-width:  1px;
+    border-style: solid;
 }
- .home-asideRight{
+ .principal-asideRight{
     grid-area: asideRight;
-    background-color:#73819b ;
-    border-top-color: #ffffff30;
-    border-top-width: 1px;
-    border-top-style: solid;
+    background-color:#9cb3dd ;
  }
+    
 
- .nav-asideLeft{
+/*  .nav-asideLeft{
     display: flex;
     flex-direction: column;
     cursor: pointer;
     font-size: 15px;
     font-weight: 400;
+    text-decoration: none;
+    outline: 0;
+ } */
 
-
+ /* a dentro del nav*/
+ 
+/*  .nav-asideLeft a{
+    text-decoration: none;
  }
+ .nav-asideLeft li{
+    list-style-type: none;
+ } */
