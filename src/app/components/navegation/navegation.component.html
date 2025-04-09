@@ -1,0 +1,8 @@
+<nav class="nav-comunication">
+    <h2 (click)="changeOpen()">
+        <ng-content select="[titulo]"></ng-content>
+    </h2>
+    <ul [ngClass]="{'menu-list': true, 'open': isOpen}">
+        <ng-content select="[lista]"></ng-content>
+    </ul>
+</nav>

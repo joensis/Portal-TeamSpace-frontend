@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-nav-comunication',
+  selector: 'app-navegation',
   imports: [CommonModule],
-  templateUrl: './nav-comunication.component.html',
-  styleUrl: './nav-comunication.component.css'
+  templateUrl: './navegation.component.html',
+  styleUrl: './navegation.component.css'
 })
-export class NavComunicationComponent {
+export class NavegationComponent {
 
   /* controlar el despliegue del menu */
   isOpen = false; 

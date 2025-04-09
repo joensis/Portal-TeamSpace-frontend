@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavFilesComponent } from './nav-files.component';
+import { NavegationComponent } from './navegation.component';
 
-describe('NavFilesComponent', () => {
-  let component: NavFilesComponent;
-  let fixture: ComponentFixture<NavFilesComponent>;
+describe('NavegationComponent', () => {
+  let component: NavegationComponent;
+  let fixture: ComponentFixture<NavegationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavFilesComponent]
+      imports: [NavegationComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NavFilesComponent);
+    fixture = TestBed.createComponent(NavegationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
