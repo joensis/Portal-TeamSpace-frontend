@@ -7,17 +7,14 @@
 
     <aside class="principal-asideLeft">
 
-        <app-profile></app-profile>
+        <app-profile class="app-profile"></app-profile>
 
         <nav class="nav-asideLeft">
 
             <app-nav-spaces></app-nav-spaces>
             <app-nav-comunication></app-nav-comunication>
             <app-nav-files></app-nav-files>
-            <app-nav-comunication></app-nav-comunication>
-
-
-
+            <app-nav-configuration></app-nav-configuration>
 
         </nav>
 
@@ -27,7 +24,8 @@
 
     <main class="principal-main">
         <!--   aqui debe ir el router-outlet  -->
-        central
+        <router-outlet></router-outlet>
+
     </main>
 
     <footer class="principal-footer">

@@ -1,3 +1,4 @@
+
 .principal-container{
     display: grid;
     grid-template-rows: 70px 1fr 60px;
@@ -7,7 +8,7 @@
     "asideLeft main asideRight"
     "footer footer footer" ;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 80%;
     margin: 0 auto;
     
@@ -16,7 +17,7 @@
 
 .principal-header{
     grid-area: header;
-    background-color: #9cb3dd;
+    background-color: #102c4b;
     display: flex;
     justify-content: space-between;
     border-color: #ffffff30;
@@ -28,50 +29,46 @@
 .principal-main{
 
     grid-area: main;
-    background-color: #f4f5f7;
+    background-color: #e9ecef;
     padding: 15px;
+    margin: 0;
+    padding: 0;
    
 }
 
 .principal-asideLeft{
-     grid-area: asideLeft;
-    background-color:#9cb3dd ;
+    position: relative;
+    z-index: 1;
+    grid-area: asideLeft;
+    background-color:#f8f9fa ;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
+    box-shadow: 3px 0 8px rgba(0, 0, 0, 0.3);
 }
 
 .principal-footer{
     grid-area: footer;
-    background-color: #9cb3dd;
+    background-color: #f8f9fa;
     display: flex;
     justify-content: space-between;
     border-color: #ffffff30;
     border-width:  1px;
     border-style: solid;
+    z-index: 1;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    
+    
+    
 }
  .principal-asideRight{
     grid-area: asideRight;
-    background-color:#9cb3dd ;
+    background-color:#f8f9fa ;
+    box-shadow: -3px 0 8px rgba(0, 0, 0, 0.3);
  }
     
 
-/*  .nav-asideLeft{
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 400;
-    text-decoration: none;
-    outline: 0;
- } */
-
- /* a dentro del nav*/
- 
-/*  .nav-asideLeft a{
-    text-decoration: none;
- }
- .nav-asideLeft li{
-    list-style-type: none;
- } */
+/* estilos sobre los componentes */
+.app-profile{
+    /* margin: 50px 0;  */
+}
