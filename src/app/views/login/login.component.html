@@ -1,0 +1,39 @@
+<div class="container-login">
+
+    <form class="form-login" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" formControlName="email">
+            @if(formLogin.get("email")?.invalid && formLogin.get("email")?.touched){
+            @if(formLogin.get("email")?.errors?.['required']){
+            <small>El email es obligatorio</small>
+            }
+            @if(formLogin.get("email")?.errors?.['minlenght']){
+            <small>El email tiene que tener al menos 4 caracteres</small>
+            }
+            }
+        </div>
+
+        <div>
+            <label for="email">Password</label>
+            <input type="password" name="password" id="password" formControlName="password">
+            @if(formLogin.get("password")?.invalid && formLogin.get("password")?.touched){
+            @if(formLogin.get("password")?.errors?.['required']){
+            <small>El password es obligatorio</small>
+            }
+            @if(formLogin.get("password")?.errors?.['minlenght']){
+            <small>El password tiene que tener al menos 4 caracteres</small>
+            }
+            }
+        </div>
+
+        <button id="button-login" type="submit" [disabled]="formLogin.invalid">Enviar</button>
+
+    </form>
+
+
+
+
+
+</div>

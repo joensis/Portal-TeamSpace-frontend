@@ -72,3 +72,11 @@
 .app-profile{
     /* margin: 50px 0;  */
 }
+
+.linkNav{
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: blueviolet;
+}
+

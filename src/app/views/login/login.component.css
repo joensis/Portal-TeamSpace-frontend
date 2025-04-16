@@ -1,0 +1,51 @@
+.container-login{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.form-login{
+    margin-top: 15%;
+    width: 20%;
+   
+    
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+div{
+    margin-bottom: 20px;
+}
+input{
+    
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+input.ng-valid .ng-touched{
+    border-color: red;
+}
+
+small{
+    color: red;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+ button [disabled]{
+    color: #cccccc;
+
+ }

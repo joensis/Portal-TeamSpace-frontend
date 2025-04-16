@@ -6,6 +6,7 @@ import { FilesComponent } from './views/files/files.component';
 import { ConfigurationComponent } from './views/configuration/configuration.component';
 import { PrincipalComponent } from './views/principal/principal.component';
 import { Component } from '@angular/core';
+import { LoginComponent } from './views/login/login.component';
 
 export const routes: Routes = [
     {path: "main", component: PrincipalComponent,
@@ -15,9 +16,11 @@ export const routes: Routes = [
             {path: "files", component:FilesComponent},
             {path: "configuration", component:ConfigurationComponent},
             {path:"default", component: DefaultComponent},
+            
         ]
     },
-    {path:"", redirectTo:"/main/default", pathMatch:"full"}    /* cambiar a login */
+    {path:"login", component: LoginComponent},
+    {path:"", redirectTo:"/login", pathMatch:"full"}    /* cambiar a login */
     
     
 ];
