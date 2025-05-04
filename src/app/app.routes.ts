@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
 import { LoginComponent } from './views/login/login.component';
 
 export const routes: Routes = [
+
+    {path:"login", component: LoginComponent},
+    {path:"", redirectTo:"/login", pathMatch:"full"},    
     {path: "main", component: PrincipalComponent,
         children:[
             {path:"spaces", component: SpacesComponent},
@@ -18,9 +21,7 @@ export const routes: Routes = [
             {path:"default", component: DefaultComponent},
             
         ]
-    },
-    {path:"login", component: LoginComponent},
-    {path:"", redirectTo:"/login", pathMatch:"full"}    /* cambiar a login */
+    }
     
     
 ];

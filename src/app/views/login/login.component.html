@@ -6,25 +6,28 @@
             <label for="email">Email</label>
             <input type="text" name="email" id="email" formControlName="email">
             @if(formLogin.get("email")?.invalid && formLogin.get("email")?.touched){
-            @if(formLogin.get("email")?.errors?.['required']){
-            <small>El email es obligatorio</small>
-            }
-            @if(formLogin.get("email")?.errors?.['minlenght']){
-            <small>El email tiene que tener al menos 4 caracteres</small>
-            }
+                @if(formLogin.get("email")?.errors?.['required']){
+                <small>El campo email es obligatorio.</small>
+                }
+                @else if(formLogin.get("email")?.errors?.['minlength']){
+                <small>El campo email tiene que tener al menos 4 caracteres.</small>
+                }
+                @else if(formLogin.get("email")?.errors?.['email']){
+                    <small>El campo debe tener formato email.</small>
+                    }
             }
         </div>
 
         <div>
-            <label for="email">Password</label>
+            <label for="password">Password</label>
             <input type="password" name="password" id="password" formControlName="password">
             @if(formLogin.get("password")?.invalid && formLogin.get("password")?.touched){
-            @if(formLogin.get("password")?.errors?.['required']){
-            <small>El password es obligatorio</small>
-            }
-            @if(formLogin.get("password")?.errors?.['minlenght']){
-            <small>El password tiene que tener al menos 4 caracteres</small>
-            }
+                @if(formLogin.get("password")?.errors?.['required']){
+                <small>El campo password es obligatorio.</small>
+                }
+                @else if(formLogin.get("password")?.errors?.['minlength']){
+                <small>El campo password tiene que tener al menos 4 caracteres.</small>
+                }
             }
         </div>
 
