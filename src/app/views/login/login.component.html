@@ -1,7 +1,7 @@
 <div class="container-login">
 
     <form class="form-login" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
-
+ 
         <div>
             <label for="email">Email</label>
             <input type="text" name="email" id="email" formControlName="email">
@@ -31,7 +31,10 @@
             }
         </div>
 
-        <button id="button-login" type="submit" [disabled]="formLogin.invalid">Enviar</button>
+        <div>
+            <button id="button-login" type="submit" [disabled]="formLogin.invalid">Enviar</button>
+        </div>
+        
 
     </form>
 

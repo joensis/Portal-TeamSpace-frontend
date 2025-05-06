@@ -11,7 +11,7 @@ import { UserServicesService } from './userResources/services/user-services.serv
 })
 export class FormUserComponent {
 
-  formUser: FormGroup; 
+   formUser: FormGroup; 
 
   constructor(private UserService: UserServicesService){
     this.formUser = new FormGroup({
@@ -34,7 +34,7 @@ export class FormUserComponent {
         }
     })
     }
-  }
+  }  
 
 
 }

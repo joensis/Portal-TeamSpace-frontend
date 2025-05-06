@@ -7,11 +7,13 @@ import { ConfigurationComponent } from './views/configuration/configuration.comp
 import { PrincipalComponent } from './views/principal/principal.component';
 import { Component } from '@angular/core';
 import { LoginComponent } from './views/login/login.component';
+import { FormUserComponent } from './views/form-user/form-user.component';
 
 export const routes: Routes = [
 
+    {path:"", redirectTo:"/login", pathMatch:"full"},
     {path:"login", component: LoginComponent},
-    {path:"", redirectTo:"/login", pathMatch:"full"},    
+    {path:"register", component: FormUserComponent },
     {path: "main", component: PrincipalComponent,
         children:[
             {path:"spaces", component: SpacesComponent},

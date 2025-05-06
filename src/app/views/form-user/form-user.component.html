@@ -1,22 +1,51 @@
 <div class="formUser-container">
-    <form class="formUser-container" [formGroup]= "formUser" (ngSubmit)="onSubmit()">
-
+    <form [formGroup]= "formUser" (ngSubmit)="onSubmit()">
+<!-- -->
         <div>
             <label for="user-name">Nombre de usuario</label>
-            <input type="text" name="userName">
+            <input type="text" name="userName" formControlName="userName">
+            @if(formUser.get("userName")?.invalid && formUser.get("userName")?.touched){
+                @if(formUser.get("userName")?.errors?.['required']){
+                    <small>El nombre de usuario es obligatorio.</small>
+                }
+                @else if (formUser.get("userName")?.errors?.['minLenght']) {
+                    <small>El nombre de usuario debe tener mínimo 4 caracteres.</small>
+                }
+                
+            }
         </div>
 
         <div>
             <label for="user-email">Email</label>
-            <input type="email" name="userEmail">
+            <input type="email" name="userEmail" formControlName="userEmail">
+            @if(formUser.get("userEmail")?.invalid && formUser.get("userEmail")?.touched){
+                @if(formUser.get("userEmail")?.errors?.['required']){
+                    <small>El email es obligatorio.</small>
+                }
+                @else if (formUser.get("userName")?.errors?.['email']) {
+                    <small>El campo debe tener formato email.</small>
+                }
+                
+            }
         </div>
 
         <div>
             <label for="user-name">Password</label>
-            <input type="password" name="userPassword">
+            <input type="password" name="userPassword" formControlName="userPassword">
+            @if(formUser.get("userPassword")?.invalid && formUser.get("userPassword")?.touched){
+                @if(formUser.get("userPassword")?.errors?.['required']){
+                    <small>La contraseña es obligatoria.</small>
+                }
+                @else if (formUser.get("userPassword")?.errors?.['minLength']) {
+                    <small>El campo debe tener al menos 4 caracteres.</small>
+
+                }
+            }
         </div>
 
-        <button type="submit">Dar de alta</button>
+        <div>
+            <button type="submit" [disabled]="formUser.invalid" >Dar de alta</button>
+        </div>
 
 
     </form>
