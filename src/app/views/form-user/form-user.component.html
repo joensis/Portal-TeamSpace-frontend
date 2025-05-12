@@ -2,13 +2,13 @@
     <form [formGroup]= "formUser" (ngSubmit)="onSubmit()">
 <!-- -->
         <div>
-            <label for="user-name">Nombre de usuario</label>
-            <input type="text" name="userName" formControlName="userName">
-            @if(formUser.get("userName")?.invalid && formUser.get("userName")?.touched){
-                @if(formUser.get("userName")?.errors?.['required']){
+            <label for="nameUser">Nombre de usuario</label>
+            <input type="text" name="nameUser" formControlName="nameUser">
+            @if(formUser.get("nameUser")?.invalid && formUser.get("nameUser")?.touched){
+                @if(formUser.get("nameUser")?.errors?.['required']){
                     <small>El nombre de usuario es obligatorio.</small>
                 }
-                @else if (formUser.get("userName")?.errors?.['minLenght']) {
+                @else if (formUser.get("nameUser")?.errors?.['minLength']) {
                     <small>El nombre de usuario debe tener mínimo 4 caracteres.</small>
                 }
                 
@@ -16,13 +16,13 @@
         </div>
 
         <div>
-            <label for="user-email">Email</label>
-            <input type="email" name="userEmail" formControlName="userEmail">
-            @if(formUser.get("userEmail")?.invalid && formUser.get("userEmail")?.touched){
-                @if(formUser.get("userEmail")?.errors?.['required']){
+            <label for="emailUser">Email</label>
+            <input type="email" name="emailUser" formControlName="emailUser">
+            @if(formUser.get("emailUser")?.invalid && formUser.get("emailUser")?.touched){
+                @if(formUser.get("emailUser")?.errors?.['required']){
                     <small>El email es obligatorio.</small>
                 }
-                @else if (formUser.get("userName")?.errors?.['email']) {
+                @else if (formUser.get("emailUser")?.errors?.['email']) {
                     <small>El campo debe tener formato email.</small>
                 }
                 
@@ -30,13 +30,13 @@
         </div>
 
         <div>
-            <label for="user-name">Password</label>
-            <input type="password" name="userPassword" formControlName="userPassword">
-            @if(formUser.get("userPassword")?.invalid && formUser.get("userPassword")?.touched){
-                @if(formUser.get("userPassword")?.errors?.['required']){
+            <label for="passwordUser">Password</label>
+            <input type="password" name="passwordUser" formControlName="passwordUser">
+            @if(formUser.get("passwordUser")?.invalid && formUser.get("passwordUser")?.touched){
+                @if(formUser.get("passwordUser")?.errors?.['required']){
                     <small>La contraseña es obligatoria.</small>
                 }
-                @else if (formUser.get("userPassword")?.errors?.['minLength']) {
+                @else if (formUser.get("passwordUser")?.errors?.['minLength']) {
                     <small>El campo debe tener al menos 4 caracteres.</small>
 
                 }

@@ -13,7 +13,7 @@ export class UserServicesService {
   constructor(private http: HttpClient, private router: Router) {  }
 
   createUser(newUser: NewUsers): Observable<NewUserResponse>{
-    return this.http.post<NewUserResponse>('./api/newUser', newUser)
+    return this.http.post<NewUserResponse>('http://localhost:8080/api/users/add', newUser)
   }
 
 
