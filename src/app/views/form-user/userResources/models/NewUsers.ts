@@ -1,4 +1,5 @@
 export class NewUsers{
+    
     nameUser: string;
     emailUser: string; 
     passwordUser: string

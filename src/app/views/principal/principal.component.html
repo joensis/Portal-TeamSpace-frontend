@@ -9,10 +9,20 @@
 
         <app-profile class="app-profile"></app-profile>
 
+        <hr>
         <nav class="nav-asideLeft">
 
             <app-navegation>
-                <span class="titleNav" titulo>Espacios</span>
+                <span class="titleNav" titulo><i class="fa-solid fa-people-group" style="color: #c8c8c8;"></i>Espacios</span>
+                <ng-container lista>
+                    <li><a class="linkNav" href="">Enlace1</a></li>
+                    <li><a class="linkNav" href="">Enlace2</a></li>
+                    <li><a class="linkNav" href="">Enlace3</a></li>
+                </ng-container>
+            </app-navegation>
+            
+            <app-navegation>
+                <span titulo><i class="fa-solid fa-tower-cell" style="color: #c8c8c8;"></i>Comunicación</span>
                 <ng-container lista>
                     <li><a class="linkNav" href="">Enlace1</a></li>
                     <li><a class="linkNav" href="">Enlace2</a></li>
@@ -21,7 +31,7 @@
             </app-navegation>
 
             <app-navegation>
-                <span titulo>Comunicación</span>
+                <span titulo><i class="fa-solid fa-file" style="color: #c8c8c8;"></i>Archivos</span>
                 <ng-container lista>
                     <li><a class="linkNav" href="">Enlace1</a></li>
                     <li><a class="linkNav" href="">Enlace2</a></li>
@@ -30,7 +40,7 @@
             </app-navegation>
 
             <app-navegation>
-                <span titulo>Archivos</span>
+                <span titulo><i class="fa-solid fa-gear" style="color: #c8c8c8;"></i>Ajustes</span>
                 <ng-container lista>
                     <li><a class="linkNav" href="">Enlace1</a></li>
                     <li><a class="linkNav" href="">Enlace2</a></li>
@@ -38,14 +48,7 @@
                 </ng-container>
             </app-navegation>
 
-            <app-navegation>
-                <span titulo>Ajustes</span>
-                <ng-container lista>
-                    <li><a class="linkNav" href="">Enlace1</a></li>
-                    <li><a class="linkNav" href="">Enlace2</a></li>
-                    <li><a class="linkNav" href="">Enlace3</a></li>
-                </ng-container>
-            </app-navegation>
+           
 
         </nav>
 

@@ -1,6 +1,6 @@
 <div class="formUser-container">
     <form [formGroup]= "formUser" (ngSubmit)="onSubmit()">
-<!-- -->
+        <!-- -->
         <div>
             <label for="nameUser">Nombre de usuario</label>
             <input type="text" name="nameUser" formControlName="nameUser">
@@ -14,7 +14,7 @@
                 
             }
         </div>
-
+        
         <div>
             <label for="emailUser">Email</label>
             <input type="email" name="emailUser" formControlName="emailUser">
@@ -28,7 +28,7 @@
                 
             }
         </div>
-
+        
         <div>
             <label for="passwordUser">Password</label>
             <input type="password" name="passwordUser" formControlName="passwordUser">
@@ -38,23 +38,24 @@
                 }
                 @else if (formUser.get("passwordUser")?.errors?.['minLength']) {
                     <small>El campo debe tener al menos 4 caracteres.</small>
-
+                    
                 }
             }
         </div>
-
+        
         <div>
             <button type="submit" [disabled]="formUser.invalid" >Dar de alta</button>
         </div>
-
-
+        
+        
     </form>
-
-
-
-
-
-
-
+    
+    <app-user-succes [message]="succesMessage" [visible]="showVisible"></app-user-succes>
+    
+    
+    
+    
+    
+    
 
 </div>

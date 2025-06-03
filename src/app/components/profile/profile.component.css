@@ -1,3 +1,7 @@
+:host{
+    margin-top: 10px;
+}
+
 .profile-container{
     display: flex;
     flex-direction: column;
@@ -5,7 +9,14 @@
     align-items: center;
 }
 
-.profile-container-pic{
+.profile-container-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;   /* evita que se deforme la imagen */
     
     
 }
+
+
+    

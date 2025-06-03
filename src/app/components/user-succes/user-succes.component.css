@@ -1,0 +1,16 @@
+.succes-container{
+    position: absolute;
+    bottom: 30px;
+   left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.messageSucces-container{
+    font-size: 15px;
+}

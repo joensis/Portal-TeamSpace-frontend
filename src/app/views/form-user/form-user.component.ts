@@ -2,16 +2,19 @@ import { Component } from '@angular/core';
 import { FormGroup, ReactiveFormsModule, Validators, FormControl } from '@angular/forms';
 import { NewUsers } from './userResources/models/NewUsers';
 import { UserServicesService } from './userResources/services/user-services.service';
+import { UserSuccesComponent } from "../../components/user-succes/user-succes.component";
 
 @Component({
   selector: 'app-form-user',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, UserSuccesComponent],
   templateUrl: './form-user.component.html',
   styleUrl: './form-user.component.css'
 })
 export class FormUserComponent {
 
    formUser: FormGroup; 
+   succesMessage: string = '';
+   showVisible: boolean = false; 
 
   constructor(private UserService: UserServicesService){
     this.formUser = new FormGroup({
@@ -27,9 +30,18 @@ export class FormUserComponent {
       this.UserService.createUser(newUser)
       .subscribe({
         next:(response)=>{
+          this.succesMessage = response.message; 
+          this.showVisible = true; 
+          
           console.log("Creacion de usuario correcto");
           this.formUser.reset(); 
-        },                             // modificar todo esto 
+          //ocultar el mensaje despues de 5 seg
+           setTimeout(() => {
+            this.showVisible = false; 
+          }, 3000); 
+
+
+        },                           
         error:(err)=>{
           console.log("Error al crear el usuario")
         }
