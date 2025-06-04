@@ -13,10 +13,13 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 3px solid #7dbce6;
     object-fit: cover;   /* evita que se deforme la imagen */
     
     
 }
+
+
 
 
     
