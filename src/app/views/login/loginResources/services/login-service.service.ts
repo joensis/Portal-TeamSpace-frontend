@@ -13,7 +13,7 @@ export class LoginServiceService {
   constructor(private http: HttpClient, private router: Router) { }
 
   LoginUser(user: User): Observable<LoginResponse>{
-    return this.http.post<LoginResponse>('./api/loginUser', user);
+    return this.http.post<LoginResponse>('http://localhost:8080/api/users/login', user);
     
   }
 

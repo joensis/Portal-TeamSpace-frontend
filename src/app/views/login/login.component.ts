@@ -33,7 +33,7 @@ export class LoginComponent {
         next: (response)=>{
           localStorage.setItem('token', response.token); //almacena el token 
           console.log("Login correcto");
-          this.router.navigate(["./main"]);
+          this.router.navigate(["./main/default"]);
 
         },
         error:(err)=>{
