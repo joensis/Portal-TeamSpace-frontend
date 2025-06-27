@@ -1,59 +1,39 @@
-# ProyectoPortal
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
 
-## Development server
+###  TeamSpace - frontend
 
-To start a local development server, run:
+##### Este es el frontend de **TeamSpace**, una aplicación web orientada a la colaboración entre equipos mediante espacios de trabajo compartidos.
 
-```bash
-ng serve
-```
+Desarrollado con **Angular**, este proyecto forma parte de mi proceso de aprendizaje  en desarrollo frontend. A medida que avanzo, voy incorporando nuevas funcionalidades y explorando buenas prácticas a la vez que desarrollo el back para ir implementando el funcionamiento de la aplicación completea. 
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+######  Objetivos del proyecto
 
-## Code scaffolding
+- Aprender Angular desde una base sólida.
+- Aplicar componentes standalone, servicios, routing y gestión de estados.
+- Integrar el frontend con un backend desarrollado en Spring Boot.
+- Mejorar progresivamente la experiencia de usuario y la estructura del código
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+###### Funcionalidades iniciales
 
-```bash
-ng generate component component-name
-```
+- Registro y login de usuarios.
+- Gestión de espacios de trabajo.
+- Vista principal con barra lateral y cabecera personalizada.
+- Interfaz responsive en proceso de mejora continua.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+###### Tecnologías usadas
 
-```bash
-ng generate --help
-```
+- Angular 
+- Typescript
 
-## Building
+###### Próximos pasos
 
-To build the project run:
+- Implementación de guards para protección de rutas.
+- Manejo de tokens JWT en el cliente.
+- Consumo eficiente de APIs REST.
+- Incorporación de formularios reactivos y validaciones.
+- Creación de un chat entre usuarios.
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+  
