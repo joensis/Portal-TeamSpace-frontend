@@ -18,7 +18,7 @@ Desarrollado con **Angular**, este proyecto forma parte de mi proceso de aprendi
 - Registro y login de usuarios.
 - Gestión de espacios de trabajo.
 - Vista principal con barra lateral y cabecera personalizada.
-- Interfaz responsive en proceso de mejora continua.
+  
 
 ###### Tecnologías usadas
 
@@ -29,8 +29,6 @@ Desarrollado con **Angular**, este proyecto forma parte de mi proceso de aprendi
 
 - Implementación de guards para protección de rutas.
 - Manejo de tokens JWT en el cliente.
-- Consumo eficiente de APIs REST.
-- Incorporación de formularios reactivos y validaciones.
 - Creación de un chat entre usuarios.
 
 
