@@ -1,7 +1,8 @@
+<div class="background-image"></div>  <!--este div va vacio porque aqui se coloca la imagen de fondo en los estilos-->
 <div class="container-login">
 
     <form class="form-login" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
- 
+        <h2>Login</h2>
         <div>
             <label for="email">Email</label>
             <input type="text" name="email" id="email" formControlName="email">
@@ -33,8 +34,11 @@
 
         <div>
             <button id="button-login" type="submit" [disabled]="formLogin.invalid">Enviar</button>
+            
         </div>
         
+        <small class="notRegister">Regístrate</small>
+        <small class="forgetPass">¿Olvidaste la contraseña?</small>
 
     </form>
 
