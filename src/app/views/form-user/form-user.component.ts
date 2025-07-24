@@ -3,10 +3,11 @@ import { FormGroup, ReactiveFormsModule, Validators, FormControl } from '@angula
 import { NewUsers } from './userResources/models/NewUsers';
 import { UserServicesService } from './userResources/services/user-services.service';
 import { UserSuccesComponent } from "../../components/user-succes/user-succes.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-form-user',
-  imports: [ReactiveFormsModule, UserSuccesComponent],
+  imports: [ReactiveFormsModule, UserSuccesComponent, RouterModule],
   templateUrl: './form-user.component.html',
   styleUrl: './form-user.component.css'
 })

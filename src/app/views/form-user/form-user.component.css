@@ -86,3 +86,9 @@ button:disabled{
  small{
     color: red;
  }
+ #registerAlready{
+    text-align: center;
+    margin-top: 5px;
+    color: #8ca5ce !important;
+    cursor: pointer;
+ }

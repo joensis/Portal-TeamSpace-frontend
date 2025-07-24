@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Route, Router } from '@angular/router';
+import { Route, Router, RouterModule } from '@angular/router';
 import { LoginServiceService } from './loginResources/services/login-service.service';
 import { User } from './loginResources/models/User';
 
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule,],
+  imports: [ReactiveFormsModule,RouterModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
